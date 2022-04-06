@@ -9,7 +9,7 @@
       <div class="input-container">
         <label for="pao">Escolhe o pão:</label>
         <select name="pao" id="pao" v-model="pao">
-          <option value="">Selecione o seu pão</option>
+          <option value="" selected>Selecione o seu pão</option>
           <option value="integral">Integral</option>
         </select>
       </div>
@@ -37,7 +37,36 @@
 
 <script>
 export default {
-  name: "BurgerForm"
+  name: "BurgerForm",
+  data() {
+    return {
+      // dados que vem do servidor
+      paes: null,
+      carnes: null,
+      opcionaisdata: null,
+      //dados que vai ser inserido ao servidor
+      nome: null,
+      carne: null,
+      opcionais: [],
+      status: "Solicitado",
+      msg: null
+    }
+  },
+  //medotos para trazer os dados do servidor
+  methods: {
+    async getIngredientes() {
+
+      const req = await fetch("http://localhost:3000/ingredientes");
+      const data = await req.json();
+
+      this.paes = data.paes;
+      this.carne = data.carne;
+      this.opcionaisdata = data.opcionaisdata;
+      }
+  },
+  mounted() {
+    this.getIngredientes();
+  }
 }
 </script>
 
@@ -85,10 +114,12 @@ input, select {
 .check-container span, .check-container input {
   width: auto;
 }
+
 .check-container span {
   margin-left: 6px;
   font-weight: bold;
 }
+
 .submit-btn {
   background: #222222;
   color: #e58d04;
@@ -100,6 +131,7 @@ input, select {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .submit-btn:hover {
   transition: 0.5s;
   background: #e58d04;

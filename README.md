@@ -15,5 +15,13 @@ npm run serve
 npm run build
 ```
 
+
+### Rodando o servidor API
+```
+
+npm install json-server
+
+```
+>EM packjson adicionar um script "backend": "json-server --watch db/db.json"
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
