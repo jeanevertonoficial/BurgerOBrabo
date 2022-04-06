@@ -12,7 +12,8 @@ export default {
 
 <style scoped>
 .banner-style {
-  background: url('https://static.onecms.io/wp-content/uploads/sites/9/2018/11/burger-king-whopper-shopper-FT-BLOG1118.jpg') 0 -250px;
+  /*background: url('https://static.onecms.io/wp-content/uploads/sites/9/2018/11/burger-king-whopper-shopper-FT-BLOG1118.jpg') 0 -250px;*/
+  background: url('/public/img/burger.jpg') 0 -250px;
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
@@ -50,7 +51,8 @@ h1 {
     height: 400px;
     background-size: contain;
     width: auto;
-    background: url('https://static.onecms.io/wp-content/uploads/sites/9/2018/11/burger-king-whopper-shopper-FT-BLOG1118.jpg') -50px -450px;
+    background: url('/public/img/burger.jpg') -1362px -496px;
+   /* background: url('https://static.onecms.io/wp-content/uploads/sites/9/2018/11/burger-king-whopper-shopper-FT-BLOG1118.jpg') -50px -450px;*/
   }
 }
 </style>
