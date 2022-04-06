@@ -43,5 +43,6 @@ export default {
     font-size: 42px;
     margin-bottom: 30px;
     color: #222222;
+    font-weight: 700;
   }
 </style>
