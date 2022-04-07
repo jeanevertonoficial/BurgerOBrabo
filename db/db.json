@@ -165,6 +165,18 @@
       ],
       "status": "Solicitado",
       "id": 7
+    },
+    {
+      "nome": "Everton",
+      "carne": " Picanha ",
+      "pao": " Parmesão e Orégano ",
+      "opcionais": [
+        " Bacon ",
+        " Pepino ",
+        " Cebola roxa "
+      ],
+      "status": "Solicitado",
+      "id": 8
     }
   ]
 }
