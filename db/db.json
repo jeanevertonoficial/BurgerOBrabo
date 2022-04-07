@@ -1,81 +1,131 @@
 {
-  "ingredientes" : {
-    "paes" : [
+  "ingredientes": {
+    "paes": [
       {
-        "id" : 1 ,
-        "tipo" : " Italiano Branco "
+        "id": 1,
+        "tipo": " Italiano Branco "
       },
       {
-        "id" : 2 ,
-        "tipo" : " 3 Queijos "
+        "id": 2,
+        "tipo": " 3 Queijos "
       },
       {
-        "id" : 3 ,
-        "tipo" : " Parmesão e Orégano "
+        "id": 3,
+        "tipo": " Parmesão e Orégano "
       },
       {
-        "id" : 4 ,
-        "tipo" : " Integral "
+        "id": 4,
+        "tipo": " Integral "
       }
     ],
-    "carnes" : [
+    "carnes": [
       {
-        "id" : 1 ,
-        "tipo" : " Maminha "
+        "id": 1,
+        "tipo": " Maminha "
       },
       {
-        "id" : 2 ,
-        "tipo" : " Alcatra "
+        "id": 2,
+        "tipo": " Alcatra "
       },
       {
-        "id" : 3 ,
-        "tipo" : " Picanha "
+        "id": 3,
+        "tipo": " Picanha "
       },
       {
-        "id" : 4 ,
-        "tipo" : " Hambúrguer vegetariano "
+        "id": 4,
+        "tipo": " Hambúrguer vegetariano "
       }
     ],
-    "opcionais" : [
+    "opcionais": [
       {
-        "id" : 1 ,
-        "tipo" : " Bacon "
+        "id": 1,
+        "tipo": " Bacon "
       },
       {
-        "id" : 2 ,
-        "tipo" : " Cheddar "
+        "id": 2,
+        "tipo": " Cheddar "
       },
       {
-        "id" : 3 ,
-        "tipo" : " Salame "
+        "id": 3,
+        "tipo": " Salame "
       },
       {
-        "id" : 4 ,
-        "tipo" : " Tomate "
+        "id": 4,
+        "tipo": " Tomate "
       },
       {
-        "id" : 4 ,
-        "tipo" : " Cebola roxa "
+        "id": 4,
+        "tipo": " Cebola roxa "
       },
       {
-        "id" : 4 ,
-        "tipo" : " Pepino "
+        "id": 4,
+        "tipo": " Pepino "
       }
     ]
   },
-  "estado" : [
+  "estado": [
     {
-      "id" : 1 ,
-      "tipo" : " Solicitado "
+      "id": 1,
+      "tipo": " Solicitado "
     },
     {
-      "id" : 2 ,
-      "tipo" : " Em produção "
+      "id": 2,
+      "tipo": " Em produção "
     },
     {
-      "id" : 3 ,
-      "tipo" : " Finalizado "
+      "id": 3,
+      "tipo": " Finalizado "
     }
   ],
-  "burgers" : []
+  "burgers": [
+    {
+      "nome": "Jean Everton",
+      "carne": " Picanha ",
+      "pao": " Italiano Branco ",
+      "opcionais": [
+        " Bacon ",
+        " Salame ",
+        " Pepino ",
+        " Tomate "
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Maria",
+      "carne": " Maminha ",
+      "pao": " 3 Queijos ",
+      "opcionais": [
+        " Bacon ",
+        " Cheddar ",
+        " Salame "
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "João",
+      "carne": " Picanha ",
+      "pao": " Parmesão e Orégano ",
+      "opcionais": [
+        " Bacon ",
+        " Tomate ",
+        " Pepino "
+      ],
+      "status": "Solicitado",
+      "id": 3
+    },
+    {
+      "nome": "Paulo Souza ",
+      "carne": " Hambúrguer vegetariano ",
+      "pao": " Parmesão e Orégano ",
+      "opcionais": [
+        " Tomate ",
+        " Pepino ",
+        " Cebola roxa "
+      ],
+      "status": "Solicitado",
+      "id": 4
+    }
+  ]
 }
