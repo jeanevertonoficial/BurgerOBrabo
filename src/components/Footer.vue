@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ y }} - &copy; copyhight</p>
+    <p> {{ y }} - &copy; copyhight</p>
 
   </div>
 </template>
@@ -11,8 +11,21 @@ export default {
   name: "Footer",
   data() {
     return {
-      y: '2021'
+      y: null
     }
+  }, methods: {
+    //função que busca o ano atual
+    async anoatual() {
+
+      var currentTime = new Date();
+      var y = currentTime.getFullYear()
+
+      this.y = y;
+    }
+  },
+  mounted() {
+    // retornando a busca
+    this.anoatual();
   }
 }
 
@@ -27,6 +40,7 @@ div, p {
   text-align: center;
   align-items: center;
 }
+
 p {
   display: flex;
   margin: auto;

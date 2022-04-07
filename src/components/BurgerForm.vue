@@ -10,19 +10,13 @@
         <label for="pao">Escolhe o pão:</label>
         <select name="pao" id="pao" v-model="pao">
           <option value="" selected>Selecione o seu pão</option>
-          <option value="integral">Integral</option>
+          <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">
+            {{pao.tipo}}
+          </option>
         </select>
       </div>
       <div id="opcionais-container" class="input-container">
         <label id="opcionais-title" for="opcionais">Escolhe a carne:</label>
-        <div class="check-container">
-          <input type="checkbox" value="salame" id="opcionais" v-model="opcionais">
-          <span>Salame</span>
-        </div>
-        <div class="check-container">
-          <input type="checkbox" value="salame" id="opcionais" v-model="opcionais">
-          <span>Salame</span>
-        </div>
         <div class="check-container">
           <input type="checkbox" value="salame" id="opcionais" v-model="opcionais">
           <span>Salame</span>
@@ -46,6 +40,7 @@ export default {
       opcionaisdata: null,
       //dados que vai ser inserido ao servidor
       nome: null,
+      pao: null,
       carne: null,
       opcionais: [],
       status: "Solicitado",
@@ -56,15 +51,18 @@ export default {
   methods: {
     async getIngredientes() {
 
+      //fazendo a requisição do banco "API"
       const req = await fetch("http://localhost:3000/ingredientes");
+      // fazendo a leitura da requisição em json array
       const data = await req.json();
 
       this.paes = data.paes;
-      this.carne = data.carne;
+      this.carnes = data.carnes;
       this.opcionaisdata = data.opcionaisdata;
       }
   },
   mounted() {
+    //fazendo a chamado
     this.getIngredientes();
   }
 }
