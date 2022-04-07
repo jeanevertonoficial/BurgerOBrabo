@@ -15,11 +15,21 @@
           </option>
         </select>
       </div>
+      <div class="input-container">
+        <label for="pao">Escolhe a carne do seu Burger:</label>
+        <select name="carne" id="carne" v-model="carne">
+          <option value="" selected>Selecione a carne para seu burger</option>
+          <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">
+            {{carne.tipo}}
+          </option>
+        </select>
+      </div>
       <div id="opcionais-container" class="input-container">
-        <label id="opcionais-title" for="opcionais">Escolhe a carne:</label>
-        <div class="check-container">
-          <input type="checkbox" value="salame" id="opcionais" v-model="opcionais">
-          <span>Salame</span>
+        <label id="opcionais-title" for="opcionais">Escolhe os opcionais:</label>
+        <div class="check-container" v-for="opcionais in opcionaisdata"
+             :key="opcionais.id">
+          <input type="checkbox" :value="opcionais.tipo"  id="opcionais" >
+          <span>{{ opcionais.tipo }}</span>
         </div>
       </div>
       <div class="input-container">
@@ -35,10 +45,13 @@ export default {
   data() {
     return {
       // dados que vem do servidor
+
       paes: null,
       carnes: null,
       opcionaisdata: null,
+
       //dados que vai ser inserido ao servidor
+
       nome: null,
       pao: null,
       carne: null,
@@ -53,12 +66,15 @@ export default {
 
       //fazendo a requisição do banco "API"
       const req = await fetch("http://localhost:3000/ingredientes");
+
+
       // fazendo a leitura da requisição em json array
       const data = await req.json();
+    //  console.log(data);
 
       this.paes = data.paes;
       this.carnes = data.carnes;
-      this.opcionaisdata = data.opcionaisdata;
+      this.opcionaisdata = data.opcionais;
       }
   },
   mounted() {

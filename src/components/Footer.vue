@@ -10,12 +10,13 @@
 export default {
   name: "Footer",
   data() {
+    //no data declara as vareaveis
     return {
       y: null
     }
   }, methods: {
     //função que busca o ano atual
-    async anoatual() {
+    anoatual() {
 
       var currentTime = new Date();
       var y = currentTime.getFullYear()
