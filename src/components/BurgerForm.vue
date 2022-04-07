@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Componente de mensagem</p>
+    <Messege :msg="msg" v-show="msg"/>
     <form id="burger-form" @submit="createBurger">
       <div class="input-container">
         <label for="nome">Nome do cliente:</label>
@@ -40,8 +40,13 @@
 </template>
 
 <script>
+
+import Messege from "@/components/Messege";
+
 export default {
   name: "BurgerForm",
+  components: {Messege},
+
   data() {
     return {
       // dados que vem do servidor
@@ -108,9 +113,16 @@ export default {
       //fazendo a requisição no banco
       const rest = await req.json();
 
-   //   console.log(rest);
+      console.log("Burger O Brabo Agradece seu pedido, muito Obrigado!!");
+
+      // Mensagem pedido realizado com sucesso
+      this.msg = `Pedido N° ${rest.id} realizado com sucesso!`
+
+      //apagando a mensagem de inserido com sucesso após 3 segundos
+      setTimeout(() => this.msg = "", 3000)
 
       // limpa os campos após insersão
+
 
       this.nome = "";
       this.carne = "";

@@ -126,6 +126,45 @@
       ],
       "status": "Solicitado",
       "id": 4
+    },
+    {
+      "nome": "medeiros",
+      "carne": " Alcatra ",
+      "pao": " Italiano Branco ",
+      "opcionais": [
+        " Bacon ",
+        " Salame ",
+        " Tomate ",
+        " Cebola roxa "
+      ],
+      "status": "Solicitado",
+      "id": 5
+    },
+    {
+      "nome": "João Boga",
+      "carne": " Hambúrguer vegetariano ",
+      "pao": " 3 Queijos ",
+      "opcionais": [
+        " Cheddar ",
+        " Salame ",
+        " Tomate ",
+        " Cebola roxa "
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "Pedro alves",
+      "carne": " Maminha ",
+      "pao": " Italiano Branco ",
+      "opcionais": [
+        " Bacon ",
+        " Salame ",
+        " Cebola roxa ",
+        " Pepino "
+      ],
+      "status": "Solicitado",
+      "id": 7
     }
   ]
 }
