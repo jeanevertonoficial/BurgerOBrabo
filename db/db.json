@@ -177,6 +177,18 @@
       ],
       "status": "Solicitado",
       "id": 8
+    },
+    {
+      "nome": "pedro ",
+      "carne": " Hambúrguer vegetariano ",
+      "pao": " Integral ",
+      "opcionais": [
+        " Salame ",
+        " Tomate ",
+        " Pepino "
+      ],
+      "status": "Solicitado",
+      "id": 9
     }
   ]
 }
