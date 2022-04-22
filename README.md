@@ -2,12 +2,13 @@
 
 ## Project setup
 ```
-npm install
+npm install - instalar a npm 
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve - para rodar o projeto
+npm run backend - para rodar a api do banco de dados
 ```
 
 ### Compiles and minifies for production
@@ -18,7 +19,6 @@ npm run build
 
 ### Rodando o servidor API
 ```
-
 npm install json-server
 
 ```

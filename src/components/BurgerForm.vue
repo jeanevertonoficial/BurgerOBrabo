@@ -122,8 +122,6 @@ export default {
       setTimeout(() => this.msg = "", 3000)
 
       // limpa os campos após insersão
-
-
       this.nome = "";
       this.carne = "";
       this.pao = "";
@@ -132,7 +130,7 @@ export default {
     }
   },
   mounted() {
-    //fazendo a chamado
+    //fazendo a chamado do metodo Ingredientes
     this.getIngredientes();
   }
 }
