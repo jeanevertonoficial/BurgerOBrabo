@@ -104,18 +104,6 @@
       "id": 2
     },
     {
-      "nome": "João",
-      "carne": " Picanha ",
-      "pao": " Parmesão e Orégano ",
-      "opcionais": [
-        " Bacon ",
-        " Tomate ",
-        " Pepino "
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
       "nome": "Paulo Souza ",
       "carne": " Hambúrguer vegetariano ",
       "pao": " Parmesão e Orégano ",
@@ -167,18 +155,6 @@
       "id": 7
     },
     {
-      "nome": "Everton",
-      "carne": " Picanha ",
-      "pao": " Parmesão e Orégano ",
-      "opcionais": [
-        " Bacon ",
-        " Pepino ",
-        " Cebola roxa "
-      ],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
       "nome": "pedro ",
       "carne": " Hambúrguer vegetariano ",
       "pao": " Integral ",
@@ -189,6 +165,20 @@
       ],
       "status": "Solicitado",
       "id": 9
+    },
+    {
+      "nome": "Paulo de tarso",
+      "carne": " Alcatra ",
+      "pao": " Italiano Branco ",
+      "opcionais": [
+        " Bacon ",
+        " Salame ",
+        " Tomate ",
+        " Cebola roxa ",
+        " Pepino "
+      ],
+      "status": "Solicitado",
+      "id": 10
     }
   ]
 }
