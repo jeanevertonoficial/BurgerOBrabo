@@ -88,20 +88,8 @@
         " Pepino ",
         " Tomate "
       ],
-      "status": "Solicitado",
+      "status": " Finalizado ",
       "id": 1
-    },
-    {
-      "nome": "Maria",
-      "carne": " Maminha ",
-      "pao": " 3 Queijos ",
-      "opcionais": [
-        " Bacon ",
-        " Cheddar ",
-        " Salame "
-      ],
-      "status": "Solicitado",
-      "id": 2
     },
     {
       "nome": "Paulo Souza ",
@@ -112,73 +100,19 @@
         " Pepino ",
         " Cebola roxa "
       ],
-      "status": "Solicitado",
+      "status": " Finalizado ",
       "id": 4
     },
     {
-      "nome": "medeiros",
-      "carne": " Alcatra ",
-      "pao": " Italiano Branco ",
-      "opcionais": [
-        " Bacon ",
-        " Salame ",
-        " Tomate ",
-        " Cebola roxa "
-      ],
-      "status": "Solicitado",
-      "id": 5
-    },
-    {
-      "nome": "João Boga",
+      "nome": "teste",
       "carne": " Hambúrguer vegetariano ",
       "pao": " 3 Queijos ",
       "opcionais": [
-        " Cheddar ",
-        " Salame ",
-        " Tomate ",
-        " Cebola roxa "
-      ],
-      "status": "Solicitado",
-      "id": 6
-    },
-    {
-      "nome": "Pedro alves",
-      "carne": " Maminha ",
-      "pao": " Italiano Branco ",
-      "opcionais": [
         " Bacon ",
-        " Salame ",
-        " Cebola roxa ",
-        " Pepino "
+        " Tomate "
       ],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": "pedro ",
-      "carne": " Hambúrguer vegetariano ",
-      "pao": " Integral ",
-      "opcionais": [
-        " Salame ",
-        " Tomate ",
-        " Pepino "
-      ],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
-      "nome": "Paulo de tarso",
-      "carne": " Alcatra ",
-      "pao": " Italiano Branco ",
-      "opcionais": [
-        " Bacon ",
-        " Salame ",
-        " Tomate ",
-        " Cebola roxa ",
-        " Pepino "
-      ],
-      "status": "Solicitado",
-      "id": 10
+      "status": " Finalizado ",
+      "id": 11
     }
   ]
 }

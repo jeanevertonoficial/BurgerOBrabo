@@ -1,4 +1,5 @@
 <template>
+  <Messege :msg="msg" v-show="msg"/>
   <div id="burguer-table">
     <div>
       <div id="burguer-table-heading">
@@ -40,13 +41,17 @@
 </template>
 
 <script>
+import Messege from "@/components/Messege";
+
 export default {
   name: "Dasboard",
+  components: {Messege},
   data() {
     return {
       burgers: null,
       burger_id: null,
-      status: []
+      status: [],
+      msg: null
     }
   },
   methods: {
@@ -79,7 +84,11 @@ export default {
 
       const res = await req.json();
 
-      // msg
+      // Mensagem pedido removido com sucesso
+      this.msg = `Pedido N° ${res.id} Removido com sucesso!`
+
+      //apagando a mensagem de inserido com sucesso após 3 segundos
+      setTimeout(() => this.msg = "", 3000)
 
       this.getPedidos();
 
@@ -90,13 +99,20 @@ export default {
 
       const dataJson = JSON.stringify({ status: option });
 
-      const req = await fetch(`http://localhost:3000/bugers/${id}`, {
+      const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        // PATCH é como o update mais só atualiza oque foi mudado.
         method: "PATCH",
         headers: { "Content-Type": "application/json"},
         body: dataJson
       });
 
       const res = await req.json();
+
+      // Mensagem pedido removido com sucesso
+      this.msg = `Pedido N° ${res.id} foi atualizado para ${res.status}!`
+
+      //apagando a mensagem de inserido com sucesso após 3 segundos
+      setTimeout(() => this.msg = "", 3000)
 
       console.log(res);
     }
