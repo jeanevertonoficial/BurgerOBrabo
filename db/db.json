@@ -77,42 +77,5 @@
       "tipo": " Finalizado "
     }
   ],
-  "burgers": [
-    {
-      "nome": "Jean Everton",
-      "carne": " Picanha ",
-      "pao": " Italiano Branco ",
-      "opcionais": [
-        " Bacon ",
-        " Salame ",
-        " Pepino ",
-        " Tomate "
-      ],
-      "status": " Finalizado ",
-      "id": 1
-    },
-    {
-      "nome": "Paulo Souza ",
-      "carne": " Hambúrguer vegetariano ",
-      "pao": " Parmesão e Orégano ",
-      "opcionais": [
-        " Tomate ",
-        " Pepino ",
-        " Cebola roxa "
-      ],
-      "status": " Finalizado ",
-      "id": 4
-    },
-    {
-      "nome": "teste",
-      "carne": " Hambúrguer vegetariano ",
-      "pao": " 3 Queijos ",
-      "opcionais": [
-        " Bacon ",
-        " Tomate "
-      ],
-      "status": " Finalizado ",
-      "id": 11
-    }
-  ]
+  "burgers": []
 }
