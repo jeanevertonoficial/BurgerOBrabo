@@ -39,6 +39,11 @@ terminal CMD
  <img src="	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
 </a>
 
+
+# VERCEL
+
+> aplicação disponivel no @[vercel](https://burger-o-brabo.vercel.app/)
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve - para rodar o projeto
